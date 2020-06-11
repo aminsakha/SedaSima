@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdvertisementCompany">
+   <children>
+      <SplitPane dividerPositions="0.6044176706827309" orientation="VERTICAL" prefHeight="500.0" prefWidth="700.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #ffffff;">
+               <children>
+                  <ImageView fitHeight="440.0" fitWidth="601.0" layoutX="293.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../White_%5Bwww.4downloads.ir%5D%20(21).jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="376.0" fitWidth="593.0" layoutX="-187.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../t.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="292.0" layoutY="14.0" text="make Ad" textFill="#030430">
+                     <font>
+                        <Font name="System Bold Italic" size="30.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="adName" layoutX="27.0" layoutY="91.0" prefHeight="25.0" prefWidth="133.0" promptText="name">
+                     <effect>
+                        <DropShadow color="#ebf26e" />
+                     </effect></TextField>
+                  <TextField fx:id="timeField" layoutX="189.0" layoutY="91.0" prefHeight="25.0" prefWidth="133.0" promptText="start time">
+                     <effect>
+                        <DropShadow color="#eee760" />
+                     </effect></TextField>
+                  <TextField fx:id="durationField" layoutX="522.0" layoutY="91.0" prefHeight="25.0" prefWidth="143.0" promptText="duration (minute)">
+                     <effect>
+                        <DropShadow color="#e4ee51" />
+                     </effect></TextField>
+                  <TextField fx:id="channelField" layoutX="354.0" layoutY="91.0" prefHeight="25.0" prefWidth="143.0" promptText="channel name">
+                     <effect>
+                        <DropShadow color="#e5f570" />
+                     </effect></TextField>
+                  <Button layoutX="276.0" layoutY="259.0" mnemonicParsing="false" onAction="#request" style="-fx-background-color: #b3d9ff;" text="send req to the channel">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" style="-fx-background-color: #e6f2ff;">
+               <children>
+                  <Label layoutX="239.0" layoutY="14.0" text="charge your acccount" textFill="#070861">
+                     <font>
+                        <Font name="System Bold Italic" size="24.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="chargeField" layoutX="284.0" layoutY="85.0" promptText="amount ( toman )">
+                     <effect>
+                        <DropShadow color="#ccf518" />
+                     </effect></TextField>
+                  <Button layoutX="322.0" layoutY="135.0" mnemonicParsing="false" onAction="#charge" style="-fx-background-color: #b3d9ff;" text="charge it !">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
+                  <Button layoutX="35.0" layoutY="19.0" mnemonicParsing="false" onAction="#back" style="-fx-background-color: #b3d9ff;" text="back" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

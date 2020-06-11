@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #ccffcc;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CEOLoginController">
+   <children>
+      <TextArea layoutX="89.0" layoutY="73.0" prefHeight="355.0" prefWidth="523.0" style="fx-text-fill: #1e88e5;" text="Welcome to our new desktop APK &#10;     &#10;  here you can see what to do to use as the best as is possible this APK.&#10;&#10;at the first the CEO should come and use the user and pass that&#10; we gave him before.&#10;&#10;then he can make a new channel and a manager for that.manager can make&#10; program and change them and delete them any time he want.&#10;&#10;as the advertisment company they can make an ad for a specific&#10; channel if they have enough money.&#10;&#10;at last guest can see the channels and their programs and rate them up.">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></TextArea>
+      <Button layoutX="25.0" layoutY="440.0" mnemonicParsing="false" onAction="#home" text="home">
+         <effect>
+            <Reflection />
+         </effect>
+         <font>
+            <Font name="Bookshelf Symbol 7" size="12.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

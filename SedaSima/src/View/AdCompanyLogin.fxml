@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdvertisementCompany">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Collection%20of%20Vector%20Abstract%20Backgrounds%2025%20(17).jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="LoginUserField" layoutX="380.0" layoutY="173.0" prefHeight="25.0" prefWidth="240.0" promptText="user name">
+         <effect>
+            <Reflection />
+         </effect></TextField>
+      <ImageView fitHeight="106.0" fitWidth="128.0" layoutX="437.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../i.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="LoginPassField" layoutX="380.0" layoutY="239.0" prefHeight="25.0" prefWidth="240.0" promptText="password">
+         <effect>
+            <Reflection />
+         </effect></PasswordField>
+      <ImageView fitHeight="115.0" fitWidth="106.0" layoutX="297.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../avatar.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="478.0" layoutY="296.0" mnemonicParsing="false" onAction="#login" style="-fx-background-color: #66a3ff;" text="login">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <effect>
+            <DropShadow color="#eb0d0d" />
+         </effect></Button>
+      <Label fx:id="loginLabel" layoutX="430.0" layoutY="271.0" text="your pass or user in wrong" textFill="#b90505" visible="false" />
+      <ImageView fx:id="eye" fitHeight="17.0" fitWidth="25.0" layoutX="641.0" layoutY="244.0" onMouseClicked="#showPass" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../eye.png" />
+         </image>
+         <effect>
+            <DropShadow color="#da1616" />
+         </effect>
+      </ImageView>
+      <TextField fx:id="visibleField" layoutX="380.0" layoutY="239.0" prefHeight="25.0" prefWidth="240.0" promptText="password" visible="false">
+         <effect>
+            <Reflection />
+         </effect>
+      </TextField>
+   </children>
+</AnchorPane>

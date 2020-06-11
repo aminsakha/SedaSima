@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #e6e6e6;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdvertisementCompany">
+    <children>
+        <TextField fx:id="userNameField" layoutX="213.0" layoutY="296.0" prefHeight="25.0" prefWidth="274.0" promptText="user name">
+         <effect>
+            <DropShadow color="#12eb3e" />
+         </effect></TextField>
+        <PasswordField fx:id="PasswordField" layoutX="213.0" layoutY="344.0" prefHeight="25.0" prefWidth="274.0" promptText="passsword">
+         <effect>
+            <DropShadow color="#09fc56" />
+         </effect></PasswordField>
+        <TextField fx:id="namefield" layoutX="213.0" layoutY="200.0" prefHeight="25.0" prefWidth="274.0" promptText="your Company Name">
+         <effect>
+            <DropShadow color="#09e329" />
+         </effect></TextField>
+        <TextField fx:id="balancefield" layoutX="213.0" layoutY="250.0" prefHeight="25.0" prefWidth="274.0" promptText="your base account ballance">
+         <effect>
+            <DropShadow color="#0eeb3e" />
+         </effect></TextField>
+        <Button layoutX="318.0" layoutY="399.0" mnemonicParsing="false" onAction="#signUp" style="-fx-background-color: #ff5c33;" text="Sign up">
+         <effect>
+            <DropShadow color="#0609c3" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+        <Label layoutX="220.0" layoutY="441.0" onMouseClicked="#goToLoginPage" text="already have an account ?! lets sign in !">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Label>
+      <ImageView fitHeight="144.0" fitWidth="147.0" layoutX="279.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Team-512.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="29.0" layoutY="385.0" mnemonicParsing="false" onAction="#undo" style="-fx-background-color: #ff5c33;" text="back">
+         <effect>
+            <DropShadow color="#0609c3" />
+         </effect>
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

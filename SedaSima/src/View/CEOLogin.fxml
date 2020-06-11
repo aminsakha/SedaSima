@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="500" prefWidth="700" style="-fx-background-color: #80b3ff;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CEOLoginController">
+   <children>
+      <ImageView fitHeight="195.0" fitWidth="201.0" layoutX="76.0" layoutY="97.0" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <DropShadow color="#f50b0b">
+               <input>
+                  <Glow />
+               </input>
+            </DropShadow>
+         </effect>
+         <image>
+            <Image url="@../download.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="userfield" layoutX="413.0" layoutY="146.0" prefHeight="25.0" prefWidth="195.0" promptText="User Name">
+         <font>
+            <Font name="Book Antiqua" size="12.0" />
+         </font>
+         <effect>
+            <Reflection />
+         </effect>
+      </TextField>
+      <PasswordField fx:id="passfield" layoutX="413.0" layoutY="216.0" prefHeight="25.0" prefWidth="195.0" promptText="Password">
+         <effect>
+            <Reflection />
+         </effect></PasswordField>
+      <Label layoutX="424.0" layoutY="51.0" text="CEO Login " textFill="#0c0568ba">
+         <font>
+            <Font name="Cambria Italic" size="38.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Button layoutX="486.0" layoutY="278.0" mnemonicParsing="false" onAction="#Login" style="-fx-background-color: #e6f0ff;" text="Login" textFill="#1f0479">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+         <effect>
+            <DropShadow color="#17646f" />
+         </effect></Button>
+      <Label fx:id="label" layoutX="409.0" layoutY="261.0" text="your User Name or password is wrong" textFill="#ee0606" visible="false" />
+      <TextField fx:id="visiblepass" layoutX="413.0" layoutY="216.0" prefHeight="25.0" prefWidth="195.0" visible="false" />
+      <ImageView fitHeight="17.0" fitWidth="21.0" layoutX="626.0" layoutY="223.0" onMouseClicked="#showPass" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/C:/Users/TA/SedaSima/out/production/SedaSima/eye.png" />
+         </image>
+         <effect>
+            <Reflection />
+         </effect>
+      </ImageView>
+      <Label layoutX="124.0" layoutY="314.0" onMouseClicked="#guest" text="enter as guest" textFill="#1a0375">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="84.0" layoutY="348.0" onMouseClicked="#manager" text="sign in as channel manager" textFill="#1a0375">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Label layoutX="100.0" layoutY="381.0" onMouseClicked="#company" text="enter as Ad company" textFill="#1a0375">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <ImageView fitHeight="83.0" fitWidth="81.0" layoutX="130.0" layoutY="402.0" onMouseClicked="#guide" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images%20(1).png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
