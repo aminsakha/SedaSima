@@ -25,6 +25,7 @@ public class Ad {
     }
 
     public String getStartTime() {
+        System.out.println("hello");
         return startTime;
     }
 }
